@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerifyMate - Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.svg') }}" alt="VerifyMate Logo">
+            <span>VerifyMate</span>
+        </div>
+        <nav>
+            <a href="#">Solutions</a>
+            <a href="#">Product</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+        </nav>
+        <div class="actions">
+            <a href="#" class="contact">Contact Sales</a>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="result-section">
+        <div class="result-container">
+            <h2>Analysis Result</h2>
+            <div class="verdict">
+                <p>Verdict: {{ verdict }}</p>
+            </div>
+            <a href="/" class="analyze-again">Analyze Another Profile</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="{{ url_for('static', filename='logo.svg') }}" alt="VerifyMate Logo">
+                <span>VerifyMate</span>
+            </div>
+            <p>&copy; 2025 VerifyMate. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerifyMate - Scam AI Beta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.jpg') }}" alt="VerifyMate Logo">
+            <span>VerifyMate</span>
+        </div>
+        <nav>
+            <a href="#">Solutions</a>
+            <a href="#">Product</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+        </nav>
+        <div class="actions">
+            <a href="#" class="contact">Contact Sales</a>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unmask Deception With AI</h1>
+            <p>Empowering you to spot scams before they spot you. Your AI-powered shield against online fraud.</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="number">95%</span>
+                    <span class="label">Accuracy Rate</span>
+                </div>
+                <div class="stat">
+                    <span class="number">10x</span>
+                    <span class="label">Faster Analysis</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Add a relevant image or illustration here -->
+            <img src="{{ url_for('static', filename='hero-image.jpg') }}" alt="AI Analysis">
+        </div>
+    </section>
+
+    <section class="analysis-form">
+        <h2>Analyze Profile</h2>
+        <form action="/analyze" method="post" enctype="multipart/form-data">
+            <textarea id="bio" name="bio" placeholder="Enter profile bio"></textarea>
+            <input type="file" id="image" name="image">
+            <button type="submit">Analyze</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            
+               
+                <span>VerifyMate</span>
+            </div>
+            <p>&copy; 2025 VerifyMate. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
